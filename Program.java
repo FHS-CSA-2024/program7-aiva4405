@@ -1,4 +1,4 @@
-package src.main.java;
+ 
 
 //import stuff here
 import java.util.Scanner;
@@ -32,11 +32,11 @@ public class Program7 {
         decimalStanleys = convertStanleys(stanleyNickels, conversionRate);
         decimalKlevins = convertKlevins(klevins, conversionRate);
         
-        System.out.println(decimalStanleys + "     " + decimalKlevins);
         // Create output then output it to the user
         outputSchruteBucks = (double)schruteBucks + decimalStanleys + decimalKlevins;
         
-        System.out.print("\nNew schrute-bucks: $" + outputSchruteBucks);
+        System.out.print("\nNew schrute-bucks: $");
+        System.out.format("%.2f", outputSchruteBucks);
     }
     
     public static double convertStanleys(int stanleys, double rate) {
@@ -54,6 +54,12 @@ public class Program7 {
 }
 //Paste console output below:
 /*
+Enter schrute-bucks: 7
 
+Enter klevins: 17
+
+Enter stanley-nickels: 9
+
+New schrute-bucks: $7.89
 
 */
